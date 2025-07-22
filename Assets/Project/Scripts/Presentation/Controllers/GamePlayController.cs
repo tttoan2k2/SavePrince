@@ -2,34 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GamePlayController : MonoBehaviour
+public class GameplayController : MonoBehaviour
 {
-    public static GamePlayController Instance;
-
-    public BoxData boxData;
-
-    public UIBoxController UIBoxController;
-
+    public static GameplayController Ins;
+    public PosHandle PosHandle;
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
+        if (Ins == null)
+            Ins = this;
         else
-        {
-            Destroy(gameObject);
-        }
+            DestroyImmediate(gameObject);
     }
-
     private void Start()
     {
-        ShowAllGifts();
+        GameManager.Ins.LoadLevelController.LoadLevelById(GameManager.Ins.DataManager.CurrentLevel);
     }
-
-    public void ShowAllGifts()
-    {
-        UIBoxController.DisplayBoxs(boxData.ListBoxDataInfo);
-    }
-
 }

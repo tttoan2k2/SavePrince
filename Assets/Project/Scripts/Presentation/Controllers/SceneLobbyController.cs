@@ -6,14 +6,20 @@ using UnityEngine.UI;
 
 public class SceneLobbyController : MonoBehaviour
 {
-    //public void LoadPlayScene()
+    //[SerializeField] private Button playButton;
+    //public string targetPlayScene;
+
+    //private void Start()
     //{
-
-
-    //    SceneManager.LoadScene("ScenePlay");
+    //    playButton.onClick.AddListener(OnPlayClicked);
     //}
 
-    [SerializeField]private Button playButton;
+    //void OnPlayClicked()
+    //{
+    //    SceneLoader.Instance.LoadSceneWithLoading(targetPlayScene);
+    //}
+
+    [SerializeField] private Button playButton;
     public string targetPlayScene;
 
     private void Start()
@@ -23,10 +29,6 @@ public class SceneLobbyController : MonoBehaviour
 
     void OnPlayClicked()
     {
-        // Giả sử bạn muốn vào Level 1
-       
-
-        // Gọi SceneLoader để chuyển sang Loading trước, rồi mới load Level
-        SceneLoader.Instance.LoadSceneWithLoading(targetPlayScene);
+        SceneManager.LoadSceneAsync(targetPlayScene);
     }
 }

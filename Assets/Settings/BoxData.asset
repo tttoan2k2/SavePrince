@@ -12,16 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b410870c28b7b1343ba4849d025cbbc1, type: 3}
   m_Name: BoxData
   m_EditorClassIdentifier: 
-  ListBoxDataInfo:
-  - direction: {fileID: 21300000, guid: 2ad8ae21ff59d4d4fbac6ee24c460bea, type: 3}
-    boxType: {fileID: 21300000, guid: abff5f4c4269ca341b404d7e2112081c, type: 3}
-    boxColor: 0
-  - direction: {fileID: 21300000, guid: 68e3b5ddc62824975ae70deab1c320fc, type: 3}
-    boxType: {fileID: 21300000, guid: 11f557000d053d2458b75836431f2a4f, type: 3}
-    boxColor: 1
-  - direction: {fileID: 21300000, guid: 9d66fe548c6dd41398770aa1f3ab972f, type: 3}
-    boxType: {fileID: 21300000, guid: f28fd9b07e36f7345bac41bad9a93916, type: 3}
-    boxColor: 2
-  - direction: {fileID: 21300000, guid: 2ad8ae21ff59d4d4fbac6ee24c460bea, type: 3}
-    boxType: {fileID: 21300000, guid: abff5f4c4269ca341b404d7e2112081c, type: 3}
-    boxColor: 3
+  ListBoxColorInfo:
+  - boxColorEnum: 0
+    BoxColor: {r: 1, g: 0, b: 0, a: 1}
+  - boxColorEnum: 1
+    BoxColor: {r: 0, g: 0, b: 1, a: 1}
+  - boxColorEnum: 2
+    BoxColor: {r: 0, g: 1, b: 0, a: 1}
+  - boxColorEnum: 3
+    BoxColor: {r: 1, g: 0.92, b: 0.016, a: 1}
+  - boxColorEnum: 4
+    BoxColor: {r: 0.5, g: 0, b: 0.5, a: 1}
+  - boxColorEnum: 5
+    BoxColor: {r: 1, g: 0.4, b: 0.7, a: 1}
+  ListBoxDirInfo:
+  - boxDirEnum: 0
+    BoxDir: {fileID: 21300000, guid: cbf3a4078f693449c9eee3de6dc5f017, type: 3}
+  - boxDirEnum: 1
+    BoxDir: {fileID: 21300000, guid: 9d66fe548c6dd41398770aa1f3ab972f, type: 3}
+  - boxDirEnum: 2
+    BoxDir: {fileID: 21300000, guid: 2ad8ae21ff59d4d4fbac6ee24c460bea, type: 3}
+  - boxDirEnum: 3
+    BoxDir: {fileID: 21300000, guid: 68e3b5ddc62824975ae70deab1c320fc, type: 3}
+  ListBoxSizeInfo:
+  - boxSizeEnum: 0
+    BoxSize: {fileID: 21300000, guid: f28fd9b07e36f7345bac41bad9a93916, type: 3}
+  - boxSizeEnum: 1
+    BoxSize: {fileID: 21300000, guid: 11f557000d053d2458b75836431f2a4f, type: 3}
+  - boxSizeEnum: 2
+    BoxSize: {fileID: 21300000, guid: abff5f4c4269ca341b404d7e2112081c, type: 3}
